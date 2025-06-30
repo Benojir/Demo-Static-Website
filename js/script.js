@@ -101,7 +101,9 @@ $(document).ready(function() {
     // Form Submission
     $('#enquiryForm').submit(function(e) {
         e.preventDefault();
-        alert('Thank you for your enquiry! We will contact you soon.');
+        // Get the form data and send it to mailto
+        var formData = $(this).serialize();
+        window.location.href = "mailto:ttenterprisetipu@gmail.com?" + formData;
         this.reset();
     });
 
