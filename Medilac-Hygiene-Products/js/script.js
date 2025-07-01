@@ -71,6 +71,19 @@ $(document).ready(function() {
         ]
     });
 
+    // About Image Slider
+    $('.about-image-slider').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        arrows: false,
+    });
+
     // Initialize Fancybox
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
